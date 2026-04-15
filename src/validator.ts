@@ -11,7 +11,7 @@ export function enverify<S extends EnverifySchema>(
 ): InferEnv<S> {
     const source = options.source ?? process.env
     const failures: string[] = []
-    const result: Record<string, unknown> =[]
+    const result: Record<string, unknown> ={}
 
     for (const key in schema){
         const field = schema[key]
@@ -47,9 +47,9 @@ export function enverify<S extends EnverifySchema>(
             }
 
             case 'boolean': {
-                if(raw === true || raw === '1' || raw === 'true'){
+                if(raw === 'true' || raw === '1'){
                     result[key]=true
-                }else if (raw === false || raw === '0' || raw === 'false'){
+                }else if (raw === 'false' || raw === '0'){
                     result[key]=false
                 }else{
                     failures.push(`${key}: expected true/false/1/0, got "${raw}"`)

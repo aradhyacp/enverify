@@ -1,13 +1,13 @@
-import { TypedEnvSchema,InferEnv } from "./types";
-import { TypedEnvError } from "./errors";
+import { EnverifySchema,InferEnv } from "./types";
+import { EnverifyError } from "./errors";
 
-type TypedEnvOptions = {
+type EnverifyOptions = {
     source? : Record<string, string | undefined>
 }
 
-export function typedenv<S extends TypedEnvSchema>(
+export function enverify<S extends EnverifySchema>(
     schema: S,
-    options: TypedEnvOptions = {}
+    options: EnverifyOptions = {}
 ): InferEnv<S> {
     const source = options.source ?? process.env
     const failures: string[] = []
@@ -71,7 +71,7 @@ export function typedenv<S extends TypedEnvSchema>(
     }
 
     if(failures.length > 0){
-        throw new TypedEnvError(failures)
+        throw new EnverifyError(failures)
     }
 
     return result as InferEnv<S>

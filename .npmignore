@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tests
+test/
+tests/
+__tests__/
+
+# Source files
+src/
+tsconfig.json
+
+# Build configs
+webpack.config.js
+rollup.config.js
+vite.config.js
+
+# Environment files
+.env
+.env.*
+
+# Coverage
+coverage/
+
+# Git stuff
+.git
+.gitignore
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Misc
+*.log

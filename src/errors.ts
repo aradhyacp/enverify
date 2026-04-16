@@ -3,7 +3,7 @@ export class EnverifyError extends Error {
 
     constructor(failures: string[]) {
         const message = [
-            '\n✗ enverify validation failed:\n',
+            '\n✗ ts-enverify validation failed:\n',
             ...failures.map(f => `  → ${f}`),
             '\nFix the above environment variables before starting the app.\n'
         ].join('\n')

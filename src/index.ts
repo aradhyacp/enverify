@@ -1,4 +1,4 @@
-export { enverify } from './validator'
+export { typedenv } from './validator'
 
-export type {EnverifySchema,InferEnv} from './types'
-export type {EnverifyError} from './errors'
+export type {TypedEnvSchema,InferEnv} from './types'
+export type {TypedEnvError} from './errors'

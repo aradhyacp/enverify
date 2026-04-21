@@ -137,3 +137,7 @@ function — with no boilerplate and a typed result.
 ## License
 
 MIT — [aradhyacp](https://github.com/aradhyacp/ts-enverify)
+
+## Contributing
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for setup, testing, and pull request guidelines.

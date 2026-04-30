@@ -5,6 +5,8 @@ Catch missing or malformed env vars at startup — before they silently break yo
 
 Zero dependencies. Works with any framework. Infers TypeScript types automatically.
 
+![banner](ts-enverify.png)
+
 [![npm version](https://img.shields.io/npm/v/ts-enverify.svg)](https://www.npmjs.com/package/ts-enverify)
 [![license](https://img.shields.io/npm/l/ts-enverify.svg)](./LICENSE)
 
